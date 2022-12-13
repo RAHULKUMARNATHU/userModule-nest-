@@ -1,0 +1,11 @@
+### Create User
+POST http://localhost:3000/user/
+content-type: application/json
+
+{
+    "firstName":"Naveen",
+    "lastName":"Kumar",
+    "userName":"naveen@test.com",
+    "gender":"male",
+    "dob":"19/07/1999"
+}
