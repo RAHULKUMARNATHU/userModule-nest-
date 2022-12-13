@@ -11,5 +11,8 @@ content-type: application/json
 }
 
 
-###
+###Get all User
 GET http://localhost:3000/user?username=nathu@test.com
+
+###Get a particular user
+GET http://localhost:3000/user/2

@@ -14,13 +14,19 @@ export class UserService {
     this.repo.save(users);
   }
 
-  findAll(userName:string) {
+  findAll(userName: string) {
     // return `This action returns all user`;
-    return this.repo.findBy({userName });
+    return this.repo.findBy({ userName });
   }
 
+  // findOne(id: number) {
+  //   return `This action returns a #${id} user`;
+  // }
   findOne(id: number) {
-    return `This action returns a #${id} user`;
+    if (!id) {
+      return null;
+    }
+    return this.repo.findOneBy({ id });
   }
 
   update(id: number, updateUserDto: UpdateUserDto) {
