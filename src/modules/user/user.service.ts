@@ -14,8 +14,9 @@ export class UserService {
     this.repo.save(users);
   }
 
-  findAll() {
-    return `This action returns all user`;
+  findAll(userName:string) {
+    // return `This action returns all user`;
+    return this.repo.findBy({userName });
   }
 
   findOne(id: number) {

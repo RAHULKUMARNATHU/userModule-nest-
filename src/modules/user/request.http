@@ -1,5 +1,5 @@
 ### Create User
-POST http://localhost:3000/user/
+POST http://localhost:3000/user/create
 content-type: application/json
 
 {
@@ -9,3 +9,7 @@ content-type: application/json
     "gender":"male",
     "dob":"19/07/1999"
 }
+
+
+###
+GET http://localhost:3000/user?username=nathu@test.com
