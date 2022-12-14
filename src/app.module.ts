@@ -13,7 +13,7 @@ import { UserModule } from './modules/user/user.module';
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'root',
+      password: 'Admin@2022',
       database: 'user_db',
       entities: ['dist/**/*.entity.js'],
       synchronize: true,

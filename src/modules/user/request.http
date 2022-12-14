@@ -30,5 +30,5 @@ content-type: application/json
     "dob":"1999-02-25"
 }
 
-### Deleting User By Id
+### Deleting User By userName
 DELETE http://localhost:3000/user/user@test.com
