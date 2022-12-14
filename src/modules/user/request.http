@@ -3,9 +3,9 @@ POST http://localhost:3000/user/create
 content-type: application/json
 
 {
-    "firstName":"Naveen",
+    "firstName":"user",
     "lastName":"Kumar",
-    "userName":"naveen@test.com",
+    "userName":"user@test.com",
     "gender":"male",
     "dob":"19/07/1999"
 }

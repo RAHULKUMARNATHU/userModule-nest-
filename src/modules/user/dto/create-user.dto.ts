@@ -1,4 +1,4 @@
-import { IsString } from 'class-validator';
+import { IsDate, IsString } from 'class-validator';
 
 export class CreateUserDto {
   @IsString()
@@ -13,6 +13,6 @@ export class CreateUserDto {
   @IsString()
   gender: string;
 
-  @IsString()
+  @IsDate()
   dob: string;
 }
