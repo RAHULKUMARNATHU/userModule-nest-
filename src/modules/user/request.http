@@ -16,3 +16,16 @@ GET http://localhost:3000/user?username=nathu@test.com
 
 ###Get a particular user
 GET http://localhost:3000/user/user@test.com
+
+
+
+### Update user
+PATCH http://localhost:3000/user/user@test.com
+content-type: application/json
+
+{
+    "firstName":"test",
+    "lastName":"user",
+    "gender":"female",
+    "dob":"1999-02-25"
+}

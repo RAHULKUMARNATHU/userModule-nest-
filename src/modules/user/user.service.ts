@@ -1,4 +1,8 @@
-import { BadRequestException, Injectable } from '@nestjs/common';
+import {
+  BadRequestException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { CreateUserDto } from './dto/create-user.dto';
@@ -32,8 +36,15 @@ export class UserService {
     // return `This action returns a #${id} user`;
   }
 
-  update(id: number, updateUserDto: UpdateUserDto) {
-    return `This action updates a #${id} user`;
+  async update(userName: string, updateUserDto: UpdateUserDto) {
+    // return `This action updates a #${userName} user`;
+    const user = await this.findOne(userName);
+
+    if (!user) {
+      throw new NotFoundException('ohh ho User Not Exist! Use Another User');
+    }
+    Object.assign(user , updateUserDto);
+    return this.repo.save(user);
   }
 
   remove(id: number) {

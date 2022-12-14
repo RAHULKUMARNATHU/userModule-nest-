@@ -1,6 +1,4 @@
 // export class User {}
-
-import { IsOptional } from 'class-validator';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 export enum gender {
   Maleuser = 'Male',
