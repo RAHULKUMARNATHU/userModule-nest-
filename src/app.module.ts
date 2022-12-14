@@ -15,7 +15,7 @@ import { UserModule } from './modules/user/user.module';
       username: 'root',
       password: 'root',
       database: 'user_db',
-      entities: [User],
+      entities: ['dist/**/*.entity.js'],
       synchronize: true,
     }),
   ],

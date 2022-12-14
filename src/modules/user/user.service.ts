@@ -13,7 +13,7 @@ export class UserService {
     const userName = await this.findOne(createUserDto.userName);
 
     if (userName) {
-      throw new BadRequestException('ohh ho User already Exists!');
+      throw new BadRequestException('ohh ho User already Exist! Use Other One');
     }
     const users = this.repo.create(createUserDto);
     return this.repo.save(users);

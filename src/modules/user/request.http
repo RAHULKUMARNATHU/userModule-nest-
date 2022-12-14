@@ -3,11 +3,11 @@ POST http://localhost:3000/user/create
 content-type: application/json
 
 {
-    "firstName":"user1",
-    "lastName":"Kumar",
-    "userName":"user3@test.com",
-    "gender":"male",
-    "dob":"19/07/1999"
+    "firstName":"user",
+    "lastName":"user",
+    "userName":"dfddf@test.com",
+    "gender":"female",
+    "dob":"1999-06-25"
 }
 
 

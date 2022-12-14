@@ -1,5 +1,5 @@
-import { IsDate, IsString } from 'class-validator';
-
+import { IsDate, IsEnum, IsString } from 'class-validator';
+import { gender } from '../entities/user.entity';
 export class CreateUserDto {
   @IsString()
   firstName: string;
@@ -10,8 +10,10 @@ export class CreateUserDto {
   @IsString()
   userName: string;
 
-  @IsString()
-  gender: string;
+  @IsEnum({
+    type: gender,
+  })
+  gender: gender;
 
   @IsDate()
   dob: string;
