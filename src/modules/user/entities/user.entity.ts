@@ -1,5 +1,6 @@
 // export class User {}
 
+import { IsOptional } from 'class-validator';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 export enum gender {
   Maleuser = 'Male',
@@ -32,6 +33,8 @@ export class User {
   })
   gender: gender;
 
-  @Column({type:'date'})
+
+  
+  @Column({type:"date"})
   dob: Date;
 }

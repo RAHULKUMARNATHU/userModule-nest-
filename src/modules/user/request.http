@@ -4,8 +4,8 @@ content-type: application/json
 
 {
     "firstName":"user",
-    "lastName":"user",
-    "userName":"dfddf@test.com",
+    "lastName":"user1",
+    "userName":"user@test.com",
     "gender":"female",
     "dob":"1999-06-25"
 }

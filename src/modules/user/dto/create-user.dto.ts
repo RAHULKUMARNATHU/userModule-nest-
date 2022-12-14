@@ -15,6 +15,6 @@ export class CreateUserDto {
   })
   gender: gender;
 
-  @IsDate()
-  dob: string;
+  @IsString()
+  dob: Date;
 }
