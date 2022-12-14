@@ -3,9 +3,9 @@ POST http://localhost:3000/user/create
 content-type: application/json
 
 {
-    "firstName":"user",
+    "firstName":"user1",
     "lastName":"Kumar",
-    "userName":"user@test.com",
+    "userName":"user3@test.com",
     "gender":"male",
     "dob":"19/07/1999"
 }
@@ -15,4 +15,4 @@ content-type: application/json
 GET http://localhost:3000/user?username=nathu@test.com
 
 ###Get a particular user
-GET http://localhost:3000/user/2
+GET http://localhost:3000/user/user@test.com
